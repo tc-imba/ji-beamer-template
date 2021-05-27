@@ -1,0 +1,59 @@
+\documentclass[aspectratio=169]{beamer}
+% use 16:9 in new slides!
+
+\usepackage{tikz}
+
+\definecolor{UMBlue}{RGB}{5,32,103}
+\definecolor{UMYellow}{RGB}{255,216,0}
+
+\setbeamertemplate{headline}{
+  \leavevmode%
+  \begin{minipage}{0.75\paperwidth}
+  \vspace{1.2ex}\hspace{-0.245\paperwidth}
+  \resizebox{\paperwidth}{3ex}{
+    \tikz{
+      \fill [color=UMBlue] (0,0) rectangle (10, 0.13);
+      \fill [color=UMYellow] (0,-0.1) rectangle (10, -0.18);
+    }
+  }
+  \begin{beamercolorbox}[wd=\linewidth,ht=2.5ex,dp=1.125ex]{section}
+    \insertsubsectionnavigationhorizontal{\linewidth}{}{Slide \insertpagenumber}
+  \end{beamercolorbox}
+  \end{minipage}
+  \begin{minipage}{0.23\paperwidth}
+  \hspace{0.2em}
+  \includegraphics[width=\linewidth]{assets/logo.png}
+  \end{minipage}
+}
+
+\setbeamercolor{title}{fg=UMBlue}
+\setbeamercolor{frametitle}{fg=UMBlue}
+\setbeamercolor{structure}{fg=UMBlue}
+
+\title[VE203]{Discrete Mathematics Recitation Class} 
+\author[Seven Fish]{Tianyu Qiu}
+\institute[UMJI-SJTU]
+{
+	University of Michigan - Shanghai Jiaotong University
+	\\\medskip
+	Joint Institute
+}
+\date{Summer Term 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\subsection{SubSection 1}
+
+\begin{frame}{Frame Title}
+    
+This template is made based on Tianyu Qiu's suggestion: copy the template of Horst! \bigskip
+
+Made by tc-imba (\url{https://github.com/tc-imba}) :)
+    
+\end{frame}
+
+\end{document}
